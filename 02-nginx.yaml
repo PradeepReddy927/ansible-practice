@@ -1,5 +1,6 @@
-- name: Install and start nginx
-  hosts: local
+- name: install and start nginx
+  hosts: localhost
+  become: yes
   tasks:
   - name: install nginx
     ansible.builtin.package:
